@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body
+{
+    background-color: wheat;
+}
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+nav
+{
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul
+{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height: 65px;
+    color: wheat;
+}
+
+.brand
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.brand img
+{
+    width:45px;
+    padding: 8px;
+}
+
+nav ul li
+{
+    padding: 0 12px;
+}
+
+.container
+{
+    display: flex;
+    margin:23px auto;
+    width: 70%;
+    min-height:62vh;
+    background-color: black;
+    color: white;
+    border-radius:15px;
+    padding: 30px;
+    background-image: url(./requirements/bg.jpg);
+    background-position: center center;
+}
+.bottom
+{
+    position:sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#myProgressBar
+{
+    width: 80vw;
+    cursor: pointer;
+
+}
+
+.icons
+{
+    margin-top: 15px;
+}
+
+.icons i
+{
+    cursor: pointer;
+}
+
+.songItem
+{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width:120%;
+    margin: 12px 0;
+    color:black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px; 
+}
+
+.songItem img
+{
+    width: 50px;
+    border-radius: 30px;
+}
+
+.timestamp
+{
+    margin: 0 23px;
+}
+.timestamp i 
+{
+    cursor: pointer;
+}
+
+.songitemcontainer
+{
+    margin-top: 34px;
+}
+
+.songInfo
+{
+    position:absolute;
+    left: 10vw;
+}
+
+
+.songInfo img
+{
+    opacity: 0;
+    opacity: opacity 1s ease-in;
+    height: 30px;
+}

@@ -1,0 +1,57 @@
+#navbar
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#nav1
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.navel 
+{
+    display: inline-block;
+    color:black;
+    text-decoration:none;
+    margin:10px;
+    align-self: center;
+}
+
+#udemylogo
+{
+    height: 80px;
+    width: 100px;
+    margin:0px 20px;
+}
+
+#categories:hover
+{
+    color: blue;
+}
+
+#searchlogo
+{
+    height: 30px;
+    align-self: center;
+    margin: 7px;
+}
+
+#search
+{
+    display: flex;
+    flex-direction: row;
+    border:2px solid black;
+    padding:5px;
+    margin:10px;
+    border-radius: 50px;
+    flex-basis: 700px;
+    background-color:#f7f9fa;
+}
+
+#sinput
+{
+    border: 0px;
+    background-color: inherit;
+}

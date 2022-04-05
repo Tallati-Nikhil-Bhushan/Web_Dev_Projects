@@ -1,0 +1,184 @@
+/*css reset */
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Comforter', cursive;
+    font-family: 'Lobster', cursive;
+}
+
+:root{
+    --navbar-height:60px;
+}
+
+#navbar{
+    position: relative;
+    top:0px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin: 8px 20px;
+}
+
+#logo img {
+    height: 65px;
+    width: 65px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: whitesmoke;
+    display: inline-block;
+    padding: 3px 33px;
+    border: 2px solid red;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home:before{
+    content: "";
+    position: absolute;
+    background: url(../img/foodimage1.webp) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.8;
+}
+
+.h-primary{
+    font-size:2.5rem;
+    padding: 10px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid gray;
+    color: whitesmoke;
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    margin:15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding:10px;
+}
+
+#services{
+    margin: 33px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 35px;
+    margin:10px;
+    border-radius: 100px;
+    background-color: rgb(252, 203, 130);
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#client-section{
+    height: 500px;
+}
+
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url(../img/foodimage1.webp) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:15px;
+}
+#clients img{
+    height: 60px;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position:absolute;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    padding: 5px 200px;
+}
